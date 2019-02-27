@@ -9,7 +9,7 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<meta name="theme-color" content="#000000" />
-		<title>Quote Machine</title>
+    <title>Quote Machine</title>
 	</head>
 
 	<body>
@@ -17,14 +17,12 @@
 			You need to enable JavaScript to run this app.
 		</noscript>
     <div id="root">
-    <h2>Hello World</h2>
+    <div id='quote-box'>
+      <strong id='text'>quote</strong>
+      <span id="author"></span>
+      <button id="new-quote">New quote</button>
+      <a id="tweet-quote" title="tweet this qoute" target="_blank" href="#">icon</a>
     </div>
-		<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-    -->
+    </div>
 	</body>
 </html>

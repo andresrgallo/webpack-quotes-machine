@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body div#root {\\n  background-color: #222;\\n  color: #8ee4af; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body div#root {\\n  background-color: #cce010; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/index.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! index.scss */ \"./src/index.scss\");\n/* harmony import */ var index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(index_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n(function () {\n  console.log('At Quote Machine app');\n})();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! index.scss */ \"./src/index.scss\");\n/* harmony import */ var index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(index_scss__WEBPACK_IMPORTED_MODULE_0__);\nfunction _readOnlyError(name) { throw new Error(\"\\\"\" + name + \"\\\" is read-only\"); }\n\n\nvar thequotes = '';\nfetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json').then(function (response) {\n  return response.json();\n}).then(function (myJson) {\n  thequotes = (_readOnlyError(\"thequotes\"), myJson.quotes);\n  console.log('at then', thequotes);\n});\nconsole.log('hi', thequotes);\n\n(function () {\n  console.log('At Quote Machine app');\n})();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
