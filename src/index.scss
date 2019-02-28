@@ -1,5 +1,65 @@
+$radius: 5px;
+
 body {
-	div#root {
+	#root {
 		background-color: rgb(204, 224, 16);
+		height: 100vh;
+	}
+	#root.random-color {
+		background-color: black;
+	}
+	#quote-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: white;
+		border-radius: $radius;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 500px;
+		min-height: 300px;
+		text-align: center;
+		#details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			#quote-text {
+				padding: 25px;
+			}
+			#quote-author {
+				width: 80%;
+				text-align: right;
+			}
+			#text {
+				font-size: 1.75em;
+			}
+			#author {
+				font-size: 1em;
+			}
+		}
+		#actions {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 40px;
+			padding-bottom: 15px;
+			#tweet-quote {
+				margin-left: 40px;
+				svg {
+					font-size: 2.5em;
+				}
+			}
+			#new-quote {
+				margin-right: 40px;
+				line-height: 2.5em;
+				color: white;
+				font-weight: 900;
+				font-size: 0.85em;
+				width: 100px;
+				border-radius: $radius;
+			}
+		}
 	}
 }
