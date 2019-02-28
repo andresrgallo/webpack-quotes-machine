@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+    integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#new-quote").click(function () {
+          $("#text").fadeIn("slow");
+          
+        });
+      });
+    </script>
     <intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
 
 		<meta charset="utf-8" />
@@ -17,12 +28,21 @@
 			You need to enable JavaScript to run this app.
 		</noscript>
     <div id="root">
-    <div id='quote-box'>
-      <strong id='text'>quote</strong>
-      <span id="author"></span>
-      <button id="new-quote">New quote</button>
-      <a id="tweet-quote" title="tweet this qoute" target="_blank" href="#">icon</a>
-    </div>
+      <div id='quote-box'>
+        <div id="details">
+          <div id="quote-text">
+            <i class="fas fa-quote-left" id="quotes-icon" style="font-size: 1.5em; padding-right: 5px"></i>
+            <strong id='text'></strong>
+          </div>
+          <div id="quote-author">
+            -&nbsp;<span id="author"></span>
+          </div>
+        </div>
+        <div id="actions">
+          <a id="tweet-quote" title="tweet this qoute" target="_blank" href="https://google.com"><i id="tweet-icon" class="fab fa-twitter-square"></i></a>
+          <button id="new-quote">New quote</button>
+        </div>
+      </div>
     </div>
 	</body>
 </html>
