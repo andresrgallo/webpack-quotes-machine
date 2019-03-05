@@ -1,5 +1,7 @@
 import path from 'path';
 
+import CopyPlugin from 'copy-webpack-plugin';
+
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const WorkboxPlugin = require('workbox-webpack-plugin');
@@ -37,6 +39,7 @@ module.exports = {
 		new WorkboxPlugin.GenerateSW({
 			clientsClaim: true,
 			skipWaiting: true
-		})
+		}),
+		new CopyPlugin([{ from: 'src/pwa' }])
 	]
 };
