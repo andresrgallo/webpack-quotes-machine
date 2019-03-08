@@ -1,6 +1,6 @@
 # Project Overview
 
-This application generates random quotes by pressing the 'new quotes' button, generating style colors dinamically. It also has the option of adding the quote as tweet in your twitter account.
+This application generates random quotes by pressing the 'new quotes' button, displaying style colors dinamically. It also has the option of adding the quote as tweet in your twitter account.
 
 ## Tools
 
