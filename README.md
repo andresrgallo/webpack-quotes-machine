@@ -2,6 +2,10 @@
 
 This application generates random quotes by pressing the 'new quotes' button, displaying style colors dinamically. It also has the option of adding the quote as tweet in your twitter account.
 
+## Website
+
+['https://the-quotes-machine.netlify.com']('https://the-quotes-machine.netlify.com').
+
 ## Tools
 
 The application was built using the Webpack, vanilla JavaScript and SCSS.
